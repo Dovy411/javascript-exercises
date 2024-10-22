@@ -1,5 +1,7 @@
 const sumAll = function(numOne, numTwo) {
 
+    if (numOne<0 || numTwo<0 || !Number.isInteger(numOne) || !Number.isInteger(numTwo)) {return "ERROR";}
+
     let finalSum = 0;
     
     if (numOne < numTwo) {
@@ -15,3 +17,5 @@ console.log(sumAll(1,4));
 
 // Do not edit below this line
 module.exports = sumAll;
+
+
